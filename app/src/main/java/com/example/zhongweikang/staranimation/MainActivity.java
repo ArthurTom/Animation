@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         RotateAnimation rotateAnimation=new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);// 旋转动画
         rotateAnimation.setDuration(5000);
         AnimationSet a=new AnimationSet(true);
-        a.addAnimation(rotateAnimation);
+        a.addAnimation(rotateAnimation);//添加
         a.addAnimation(scaleAnimation);
         imageView.startAnimation(a);
        alphaAnimation.setAnimationListener(new Animation.AnimationListener() { // 为动画设置监听事件
