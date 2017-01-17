@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         AnimationSet animationSet=new AnimationSet(true);// 动画集合
         animationSet.setDuration(5000);  // 设置集合的持续时间
         AlphaAnimation alphaAnimation=new AlphaAnimation(0,1); // 设置透明度由无到有
-        alphaAnimation.setDuration(5000);// 透明度动画持续时间
+        alphaAnimation.setDuration(5001);// 透明度动画持续时间
         animationSet.addAnimation(alphaAnimation); // 将透明度的效果设置到动画集合中
         relativeLayout.startAnimation(animationSet);
         ScaleAnimation scaleAnimation=new ScaleAnimation(0,1,0,1, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f); //缩放动画
